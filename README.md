@@ -1,1 +1,1 @@
-# equilibrio-nash-edu
+# Equilibrio de Nash
