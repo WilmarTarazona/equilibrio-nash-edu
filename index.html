@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teoría de Juegos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+    <h1>Calculadora de equilibrio de Nash</h1>
+    <table>
+        <tr>
+            <td colspan="2"><h2>Estrategia Pura</h2></td>
+        </tr>
+        <tr>
+            <td><h3>Ingresar Datos Para Jugador 1</h3></td>
+            <td><h3>Ingresar Datos Para Jugador 2</h3></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="NombreJugador1" placeholder="Nombre Jugador 1"></td>
+            <td><input type="text" id="NombreJugador2" placeholder="Nombre Jugador 2"></td>
+        </tr>
+        <tr>
+            <td><input type="number" min="2" id="NumeroDeAccionesJugador1" placeholder="Número de Acciones"></td>
+            <td><input type="number" min="2" id="NumeroDeAccionesJugador2" placeholder="Número de Acciones"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="Generar Tabla" onclick="genera_tabla()"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><div id="Pura"></div></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="Analizar" onclick="analizar()"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><h2>Estrategia Mixta</h2></td>
+        </tr>
+        <tr>
+            <td><h3>Ingresar Datos Para Jugador 1</h3></td>
+            <td><h3>Ingresar Datos Para Jugador 2</h3></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="NombreJugador1M" placeholder="Nombre Jugador 1"></td>
+            <td><input type="text" id="NombreJugador2M" placeholder="Nombre Jugador 2"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="Generar Tabla" onclick="genera_tablaM()"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><div id="Mixta"></div></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="Analizar Mixta" onclick="analizarM()"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><div id="chartContainer" style="height: 500px; width: 80%; margin: 0 auto;"></div></td>
+        </tr>
+        <tr>
+            <td colspan="2"><h3 id="Formula"></h3></td>
+        </tr>
+        <tr>
+            <td colspan="2"><h3 id="Ex"></h3></td>
+        </tr>
+    </table>
+</body>
+</html>
